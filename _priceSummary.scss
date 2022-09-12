@@ -1,0 +1,25 @@
+
+.price_summary{
+    padding: 15px;
+    width: 30%;
+}
+@media only screen and (max-width: 600px){
+    .price_summary{
+        width: fit-content;
+        margin-bottom: 300px;
+    }
+}
+.add_cart_btn{
+    border: 2px solid #FFB600;
+    border-radius: 2px;
+    padding: 10;
+    margin: 20px 0;
+    width: 300;
+    background-color: #FFB600;
+    color: black;
+    font-size: 18;
+    font-weight: 700;
+}
+.price_summary_btn{
+    text-align: center;
+}

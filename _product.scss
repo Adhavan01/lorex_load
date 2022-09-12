@@ -1,0 +1,137 @@
+// worrenty_btn
+.worr_btn{
+    background:#fff;
+    border: 1px solid;
+    border-radius: 2px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    color: #111;
+    padding: 8px 24px;
+    margin-right: 5px;
+    }
+    .worr_btn:hover,.worr_btn:active,.worActive{
+        background-color: #27AEE4;
+        border: #27AEE4;
+        color: #fff;
+    }
+.worrenty_cont{ 
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(124, 124, 124, 0.2);
+}
+@media only screen and (max-width: 600px){
+    .worr_btn{
+        padding: 8px 12px;
+        font-size: 12px;
+    }
+}
+// save_btn
+.save_btn{
+    width: 81px;
+   height: 20px;
+   font-weight: 700;
+   font-size: 12px;
+   line-height: 18px;
+   margin: 15px 0;
+   padding: 2px 0;
+   text-align: center;
+   color: #FFFFFF;
+   background-color: red;
+   border: none;
+   outline: none;
+   }
+
+//    increment
+.wrapper{
+    margin: 15px 0;
+    padding: 5px;
+    border: 1px solid #DDDDDD;
+    border-radius: 2px;
+    width: fit-content;
+    span{
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 24px;
+    color: #545454;
+    cursor: pointer;
+    padding:15px;
+    }
+    ::selection{
+        background-color:#ffff;
+    }
+}
+@media only screen and (max-width: 600px){
+    .wrapper{
+        margin: 15px auto;
+    }
+}
+
+//checkbox
+#chek[type="checkbox"]{
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 2px;
+    background: #fff;
+    border: 1px solid #2F8905;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#chek[type="checkbox"]::after{
+    font-family:"Font Awesome 6 Free";
+    font-weight: 900;
+    content: "\f00c";
+    font-size: 15px;
+    color:#fff ;
+    display: none;
+    outline: none;
+}
+#chek[type="checkbox"]:checked{
+    background: #37A703;
+}
+#chek[type="checkbox"]:checked::after{
+    display: block;
+}
+
+//add
+
+.add_product_main{
+.add_product{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(124, 124, 124, 0.2);
+    .rating_check{
+        color:#006068;
+    }
+    @media only screen and (max-width: 600px){
+        .rating_check{
+            padding-top: 20px;
+        }
+    }
+    .add_product_image{
+        padding: 0% 5%;
+    }
+    .add_product_edit span{
+        font-weight: 500;
+        font-size: 16spx;
+        line-height: 21px;
+        padding:10px;
+    }
+    .add_product_edit span:hover,.span:visited{
+        color: #034599;
+        font-weight: 600;
+        text-decoration: underline;
+    
+    }
+}
+}
+
+@media only screen and (max-width: 600px){
+    .rating{
+        padding-top: 25px;
+    }
+}

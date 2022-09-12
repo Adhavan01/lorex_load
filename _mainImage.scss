@@ -1,0 +1,71 @@
+//image
+.main_image{
+    width: 35%;
+}
+@media only screen and (max-width: 600px){
+    .main_image{
+        width: fit-content;
+        margin: 0%;
+    }
+}
+.pic{
+    width: 415px;
+    height: 439px;
+    margin: 10px 0;
+    padding: 15px;
+    padding-left: 80px;
+
+}
+@media only screen and (max-width: 600px){
+    .pic{
+        width: 315px;
+        height: 339px;
+        margin: 10 15;
+        padding: 0px;
+        padding-left:0px;
+    }
+}
+.bigpic{
+    width: 0px;
+    text-align: center;
+    display: inline-block;
+    margin: 2% 0 ; 
+    position: absolute;
+    z-index: 10;
+    box-shadow: 2px 0px 10px #ccc;
+}
+@media only screen and (max-width: 600px){
+    .bigpic{
+        display: none;
+    }
+}
+.pic:hover+.bigpic{
+    width: 600px;
+    height: 90vh;
+    
+}
+.thumb_img_list{
+    text-align: center;
+}
+.thumb_img_list ul {
+    list-style: none;
+}
+.thumb_img_list ul li{
+    display: inline-block;
+    width: 80px;
+}
+@media only screen and (max-width: 600px){
+    .thumb_img_list ul li{
+        width: 60px;
+    }
+}
+.thumb_img_list ul li img{
+    border: none;
+    cursor: pointer;
+    width:80px;
+}
+@media only screen and (max-width: 600px){
+    .thumb_img_list ul li img{
+        width:60px;
+    }
+}

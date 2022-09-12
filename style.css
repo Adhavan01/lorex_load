@@ -1,0 +1,447 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&family=Poppins&family=Raleway:ital,wght@1,200&family=Poppins&display=swap");
+.main_image {
+  width: 35%;
+}
+
+@media only screen and (max-width: 600px) {
+  .main_image {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 0%;
+  }
+}
+.pic {
+  width: 415px;
+  height: 439px;
+  margin: 10px 0;
+  padding: 15px;
+  padding-left: 80px;
+}
+
+@media only screen and (max-width: 600px) {
+  .pic {
+    width: 315px;
+    height: 339px;
+    margin: 10 15;
+    padding: 0px;
+    padding-left: 0px;
+  }
+}
+.bigpic {
+  width: 0px;
+  text-align: center;
+  display: inline-block;
+  margin: 2% 0;
+  position: absolute;
+  z-index: 10;
+  box-shadow: 2px 0px 10px #ccc;
+}
+
+@media only screen and (max-width: 600px) {
+  .bigpic {
+    display: none;
+  }
+}
+.pic:hover + .bigpic {
+  width: 600px;
+  height: 90vh;
+}
+
+.thumb_img_list {
+  text-align: center;
+}
+
+.thumb_img_list ul {
+  list-style: none;
+}
+
+.thumb_img_list ul li {
+  display: inline-block;
+  width: 80px;
+}
+
+@media only screen and (max-width: 600px) {
+  .thumb_img_list ul li {
+    width: 60px;
+  }
+}
+.thumb_img_list ul li img {
+  border: none;
+  cursor: pointer;
+  width: 80px;
+}
+
+@media only screen and (max-width: 600px) {
+  .thumb_img_list ul li img {
+    width: 60px;
+  }
+}
+.price_summary {
+  padding: 15px;
+  width: 30%;
+}
+
+@media only screen and (max-width: 600px) {
+  .price_summary {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-bottom: 300px;
+  }
+}
+.add_cart_btn {
+  border: 2px solid #FFB600;
+  border-radius: 2px;
+  padding: 10;
+  margin: 20px 0;
+  width: 300;
+  background-color: #FFB600;
+  color: black;
+  font-size: 18;
+  font-weight: 700;
+}
+
+.price_summary_btn {
+  text-align: center;
+}
+
+.worr_btn {
+  background: #fff;
+  border: 1px solid;
+  border-radius: 2px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  color: #111;
+  padding: 8px 24px;
+  margin-right: 5px;
+}
+
+.worr_btn:hover, .worr_btn:active, .worActive {
+  background-color: #27AEE4;
+  border: #27AEE4;
+  color: #fff;
+}
+
+.worrenty_cont {
+  padding-bottom: 15px;
+  border-bottom: 1px solid rgba(124, 124, 124, 0.2);
+}
+
+@media only screen and (max-width: 600px) {
+  .worr_btn {
+    padding: 8px 12px;
+    font-size: 12px;
+  }
+}
+.save_btn {
+  width: 81px;
+  height: 20px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 18px;
+  margin: 15px 0;
+  padding: 2px 0;
+  text-align: center;
+  color: #FFFFFF;
+  background-color: red;
+  border: none;
+  outline: none;
+}
+
+.wrapper {
+  margin: 15px 0;
+  padding: 5px;
+  border: 1px solid #DDDDDD;
+  border-radius: 2px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.wrapper span {
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+  color: #545454;
+  cursor: pointer;
+  padding: 15px;
+}
+.wrapper ::-moz-selection {
+  background-color: white;
+}
+.wrapper ::selection {
+  background-color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  .wrapper {
+    margin: 15px auto;
+  }
+}
+#chek[type=checkbox] {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 2px;
+  background: #fff;
+  border: 1px solid #2F8905;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#chek[type=checkbox]::after {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  content: "\f00c";
+  font-size: 15px;
+  color: #fff;
+  display: none;
+  outline: none;
+}
+
+#chek[type=checkbox]:checked {
+  background: #37A703;
+}
+
+#chek[type=checkbox]:checked::after {
+  display: block;
+}
+
+.add_product_main .add_product {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(124, 124, 124, 0.2);
+}
+.add_product_main .add_product .rating_check {
+  color: #006068;
+}
+@media only screen and (max-width: 600px) {
+  .add_product_main .add_product .rating_check {
+    padding-top: 20px;
+  }
+}
+.add_product_main .add_product .add_product_image {
+  padding: 0% 5%;
+}
+.add_product_main .add_product .add_product_edit span {
+  font-weight: 500;
+  font-size: 16spx;
+  line-height: 21px;
+  padding: 10px;
+}
+.add_product_main .add_product .add_product_edit span:hover, .add_product_main .add_product .span:visited {
+  color: #034599;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 600px) {
+  .rating {
+    padding-top: 25px;
+  }
+}
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+::-moz-selection {
+  background-color: #ccc;
+  color: #111;
+}
+
+::selection {
+  background-color: #ccc;
+  color: #111;
+}
+
+body {
+  background-color: white;
+  font-family: "Poppins";
+}
+
+/* preloder */
+.preloder {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(8, 8, 8, 0.603);
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.spinner {
+  width: 60px;
+  height: 60px;
+  border: 6px solid rgb(102, 102, 102);
+  border-radius: 50%;
+  border-top: 12px solid rgb(252, 252, 252);
+  border-bottom: 12px solid rgb(163, 161, 161);
+  -webkit-animation: spin 2s linear infinite;
+          animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.back {
+  background-color: #F3F3F3;
+  color: #034599;
+  width: 100vw;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  padding: 10px;
+  padding-left: 120px;
+  font-family: "Montserrat", sans-serif;
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 600px) {
+  .back {
+    padding-left: 30px;
+  }
+}
+.continer {
+  display: flex;
+  padding: 10px 25px;
+  width: 100vw;
+}
+
+@media only screen and (max-width: 600px) {
+  .continer {
+    display: block;
+    padding: 2px;
+  }
+}
+.product {
+  border-right: 2px solid rgba(124, 124, 124, 0.2);
+  max-width: 35%;
+  margin-top: 10px;
+  padding: 15px;
+}
+.product .rating .rating__star, .product .rating .review {
+  display: inline-block;
+  color: #006068;
+  cursor: pointer;
+}
+.product .price {
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 27px;
+  color: red;
+}
+.product .price span {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  color: #383838;
+  text-decoration: line-through;
+}
+.product .product_title {
+  height: 48px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #383838;
+}
+.product .h1t {
+  font-weight: 500;
+  font-size: 16px;
+  color: #545454;
+  margin: 10px 0;
+}
+
+@media only screen and (max-width: 600px) {
+  .product {
+    max-width: -webkit-fit-content;
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+  }
+}
+.btnP {
+  border: 3px solid #F1F1f1;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #034599;
+  margin: 0% 10px 10px 0;
+  padding: 8px 24px;
+  background-color: #FFFFFF;
+}
+
+@media only screen and (max-width: 600px) {
+  .btnP {
+    margin: 0%;
+  }
+}
+.btnP:hover, .btnP:active, .active {
+  border: 3px solid #FFB600;
+}
+
+.border_dote {
+  border-bottom: 2px dotted rgba(124, 124, 124, 0.2);
+}
+
+.price2 {
+  color: #111;
+  font-weight: 900;
+  font-size: 18px;
+  padding: 10px 0;
+}
+
+.price3 {
+  color: #111;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 10px 0;
+}
+
+.float_r {
+  float: right;
+}
+
+.maxprice2 {
+  font-weight: 100;
+  text-decoration: line-through;
+  font-size: 14px;
+  text-align: center;
+}
+
+.red_font {
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 27px;
+  color: red;
+}
+
+.offer_font {
+  font-weight: 600;
+  font-size: 12px;
+  color: red;
+}/*# sourceMappingURL=style.css.map */
